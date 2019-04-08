@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  BooksViewController.swift
 //  BibleReadingChallenge
 //
 //  Created by Anderson Dias on 08/04/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class BooksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

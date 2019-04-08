@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  DashboardViewController.swift
 //  BibleReadingChallenge
 //
 //  Created by Anderson Dias on 08/04/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
