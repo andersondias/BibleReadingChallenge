@@ -7,125 +7,353 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		332D6C1C862D381EF5E58C7C87AB5235 /* Pods-BibleReadingChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D1CBB2EF0CFEB7CA13810C0855E1DF /* Pods-BibleReadingChallenge-dummy.m */; };
-		AC7E097E98C2BF2C560E3AE179868E89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		E70D0DD83B57780DD0AF04627389C205 /* Pods-BibleReadingChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 334E524A391A00E977590B1782DA6B84 /* Pods-BibleReadingChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C4F6BDED7A940165F0FD9EEBBFB973F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBF97A4C55B9F6C989D6F8EB570EE02 /* Stack.swift */; };
+		10D9AB8027692FE37124777C8ED6D876 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD108306EE34319E6D639CA5D4464F /* Constraints.swift */; };
+		111DC894B496BB38BC8503EE2DD4312A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B2342662F33D8D969197ADCD0FEA10 /* Foundation.framework */; };
+		1EC199B46864788C24BB894250E2234B /* Pods-BibleReadingChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C7FFB31E9D59D8F1A2B1A1AD1B8765 /* Pods-BibleReadingChallenge-dummy.m */; };
+		2C1CE0DBE61D81482636E73BFC455C5F /* GaugeSectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32BF831AE4FC6E7D1CFDBEFDF6AA9C6 /* GaugeSectionLabel.swift */; };
+		34DFC88B31BC8CCDFB438FAECEF76ACB /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A141AC726A5CF6F279BB94AA8C39E98 /* TinyConstraints.swift */; };
+		45309A6AE5D13A8E95457E2620DD53D5 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655F99C2761DDA59955926E1DD623AB /* Angle.swift */; };
+		5EEC3226F1E8BEE9436646822EF5A761 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E4FD615A0CB2E72B6D5B20E40CCD4 /* Value.swift */; };
+		7107209629C31BEDA08363598ABCE2C2 /* Pods-BibleReadingChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78BD8EDBAC0144A09C4588A691B6999E /* Pods-BibleReadingChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7209D18F7DCC7AFE6BC3767D80BCD4FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B2342662F33D8D969197ADCD0FEA10 /* Foundation.framework */; };
+		74CE61F70ACD47512E64CAD45F0D8F28 /* Gauge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D771DE16B7F94BDB2F64A569CDCF8C4B /* Gauge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D6A036062357A98BA553CF420795A5 /* DefaultGaugeHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F165C131C8B9C9A496C81541383D535 /* DefaultGaugeHand.swift */; };
+		7B6FE8888F173F6379E4FD7C0C3202BD /* Gauge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08A8C0C88909D5FFBDA0F5EDA73996 /* Gauge-dummy.m */; };
+		82A90AC3DE93F9C549607477AE805DC9 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34530421371110655D5CEFFFF260BBDB /* Constrainable.swift */; };
+		85E86412651790B83729D85AC6CCC5E8 /* DefaultGaugeSectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACE6E4BEC0DE430D369E476425ACA89 /* DefaultGaugeSectionLabel.swift */; };
+		9A20718729509CAB5872771EF0285600 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB781C45B08D9058CF53A7C0FDBE3 /* Abstraction.swift */; };
+		A1F907F50C4F97E744913F97FF24AFF6 /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D7CDB3D500E104BC95C8AEF60AD0 /* Gauge.swift */; };
+		AA596645771D31C00BE255B0EF57DCAA /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3900884EF8DE2043544B47820E48D43 /* TinyConstraints-dummy.m */; };
+		AC320625B89171492850DF97BF0431C6 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97226053C9A4D962B6CFDF222B8ACEFA /* TinyConstraints.framework */; };
+		B1A44BDC92CF876FE1F5CAA82800621A /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395966FFC76D3BC78FDA1850B2C9F699 /* TinyConstraints+superview.swift */; };
+		CF171A257BDF32459ABC641CB93E707E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B2342662F33D8D969197ADCD0FEA10 /* Foundation.framework */; };
+		D16ED9A0369520EC3D18AEB9FB60884E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2B3CF3BE942C47293AC05F3E42ED75 /* UIKit.framework */; };
+		E3996A59BA9B8B0E30C876F968D29283 /* GaugeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A5D1AFC6E9F9EF47A4529094F2527 /* GaugeSection.swift */; };
+		E4BD9CBBF47D6F34EC1298CE4B6B752D /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60447B996D631117572B444488CF0AE /* TinyEdgeInsets.swift */; };
+		E82F670F50641DD9D302E5CC80B4BA99 /* GaugeHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B720DD96E31DF8B8B3350660131FBD6 /* GaugeHand.swift */; };
+		EC3762373157ECBFD1CFAA6223E1AEDD /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA5E3A17AEBD83DB44ED5A44D40E706 /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		345002DD330D91FFA932FAB334460625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89277A52DE808C1302F990F686FC07E4;
+			remoteInfo = Gauge;
+		};
+		3BCEF5FCC968B11BD4FD810ECA9BC1C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1746B57FA8D4A5C2C5F3DB2C7A74E22E;
+			remoteInfo = TinyConstraints;
+		};
+		A11FE84E89F957776738B87286F83B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1746B57FA8D4A5C2C5F3DB2C7A74E22E;
+			remoteInfo = TinyConstraints;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0224617B7D187DF09A703331432FE808 /* Pods-BibleReadingChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleReadingChallenge-Info.plist"; sourceTree = "<group>"; };
-		0BB683D300D80AC8A2C3FEDCDEDA6C49 /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		334E524A391A00E977590B1782DA6B84 /* Pods-BibleReadingChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BibleReadingChallenge-umbrella.h"; sourceTree = "<group>"; };
-		3C7F287BE9AF90D6D38B08D2E5767DC3 /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		6C03A3BA6DBB49A6310A851127241DDF /* Pods-BibleReadingChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BibleReadingChallenge.modulemap"; sourceTree = "<group>"; };
-		81D1CBB2EF0CFEB7CA13810C0855E1DF /* Pods-BibleReadingChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BibleReadingChallenge-dummy.m"; sourceTree = "<group>"; };
-		84A40AE70380361025FBCDEA7E25BBD8 /* Pods-BibleReadingChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleReadingChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		00B2342662F33D8D969197ADCD0FEA10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0DA5E3A17AEBD83DB44ED5A44D40E706 /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		10C7FFB31E9D59D8F1A2B1A1AD1B8765 /* Pods-BibleReadingChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BibleReadingChallenge-dummy.m"; sourceTree = "<group>"; };
+		119739C9A0C197B38D9EAD04CA30CD57 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		180E4FD615A0CB2E72B6D5B20E40CCD4 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Gauge/Classes/Value.swift; sourceTree = "<group>"; };
+		1D1A37BBF5633A7F69D31F3A7DF2ED70 /* Gauge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gauge.xcconfig; sourceTree = "<group>"; };
+		2070D7CDB3D500E104BC95C8AEF60AD0 /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = Gauge/Classes/Gauge.swift; sourceTree = "<group>"; };
+		287A5D1AFC6E9F9EF47A4529094F2527 /* GaugeSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeSection.swift; path = Gauge/Classes/GaugeSection.swift; sourceTree = "<group>"; };
+		34530421371110655D5CEFFFF260BBDB /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		395966FFC76D3BC78FDA1850B2C9F699 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		3A1579CE36BE4C683773806EFF2D552D /* Pods-BibleReadingChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BibleReadingChallenge.modulemap"; sourceTree = "<group>"; };
+		3D08A8C0C88909D5FFBDA0F5EDA73996 /* Gauge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gauge-dummy.m"; sourceTree = "<group>"; };
+		3FDA03B850AAB762132988C9138B9968 /* Pods-BibleReadingChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleReadingChallenge-Info.plist"; sourceTree = "<group>"; };
+		43EC22077B06E0073CF4162D186EA78F /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5655F99C2761DDA59955926E1DD623AB /* Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Angle.swift; path = Gauge/Classes/Angle.swift; sourceTree = "<group>"; };
+		5F2B3CF3BE942C47293AC05F3E42ED75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A50409944262AB4D2744657831B9210 /* Gauge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gauge.framework; path = Gauge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B720DD96E31DF8B8B3350660131FBD6 /* GaugeHand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHand.swift; path = Gauge/Classes/GaugeHand.swift; sourceTree = "<group>"; };
+		733DF14D5915150A8586B6A32D65B8E1 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		737504CC797A995F756D9A1A78864911 /* Pods-BibleReadingChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BibleReadingChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		78BD8EDBAC0144A09C4588A691B6999E /* Pods-BibleReadingChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BibleReadingChallenge-umbrella.h"; sourceTree = "<group>"; };
+		78FDB781C45B08D9058CF53A7C0FDBE3 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		7A0079B632EC8CC18959290848F89353 /* Gauge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gauge-prefix.pch"; sourceTree = "<group>"; };
+		7C4F8CF94B906A15D6606EF4DFCFBBE7 /* Pods-BibleReadingChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BibleReadingChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F165C131C8B9C9A496C81541383D535 /* DefaultGaugeHand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultGaugeHand.swift; path = Gauge/Classes/DefaultGaugeHand.swift; sourceTree = "<group>"; };
+		878A718DCC5DDC01D664E6B7AAC62E1B /* Gauge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gauge.modulemap; sourceTree = "<group>"; };
+		8A141AC726A5CF6F279BB94AA8C39E98 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		97226053C9A4D962B6CFDF222B8ACEFA /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EB08F63000A7D9E7FF9B0C85C61ED1 /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B5A272B106464EF9E22575BC6C8B808A /* Pods-BibleReadingChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BibleReadingChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDB77A21FF9AA61494986C94B75E60DF /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BibleReadingChallenge.framework; path = "Pods-BibleReadingChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3900884EF8DE2043544B47820E48D43 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		A61B0747AC744E44222C3742ACECED71 /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BACE6E4BEC0DE430D369E476425ACA89 /* DefaultGaugeSectionLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultGaugeSectionLabel.swift; path = Gauge/Classes/DefaultGaugeSectionLabel.swift; sourceTree = "<group>"; };
+		BCA02B5B488231A8B82D0D2BF0E7491A /* Pods-BibleReadingChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleReadingChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		C22CA4973450CF6D1CB3D08CB713BB13 /* Gauge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gauge-Info.plist"; sourceTree = "<group>"; };
+		C32BF831AE4FC6E7D1CFDBEFDF6AA9C6 /* GaugeSectionLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeSectionLabel.swift; path = Gauge/Classes/GaugeSectionLabel.swift; sourceTree = "<group>"; };
+		CB47D3BA595681FAE5F4E37474408AE2 /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BibleReadingChallenge.framework; path = "Pods-BibleReadingChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2093BDDAF8C23069AF8CFF67A15EC62 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D771DE16B7F94BDB2F64A569CDCF8C4B /* Gauge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gauge-umbrella.h"; sourceTree = "<group>"; };
+		E54F5D8E30A1855363333CE4B9D8AE50 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		F60447B996D631117572B444488CF0AE /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		FEBF97A4C55B9F6C989D6F8EB570EE02 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		FECD108306EE34319E6D639CA5D4464F /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C872AA0934814AF67BC4923F05859385 /* Frameworks */ = {
+		101A49B32F8B9694CFE4079AC9A244AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC7E097E98C2BF2C560E3AE179868E89 /* Foundation.framework in Frameworks */,
+				CF171A257BDF32459ABC641CB93E707E /* Foundation.framework in Frameworks */,
+				AC320625B89171492850DF97BF0431C6 /* TinyConstraints.framework in Frameworks */,
+				D16ED9A0369520EC3D18AEB9FB60884E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FBA2D6BCF1D02E23030187AFB9AD82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7209D18F7DCC7AFE6BC3767D80BCD4FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2AF31E90F4EA4FD718F5A3C6DFB46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111DC894B496BB38BC8503EE2DD4312A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		882432F49C3DF82A1BACDBEB180A3E55 /* Products */ = {
+		04C1A2BCAF3B94FDEF818CA06603BE55 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDB77A21FF9AA61494986C94B75E60DF /* Pods_BibleReadingChallenge.framework */,
+				CF4960220A14EDC0D36F3DEE0B7BCA96 /* Gauge */,
+				B0F98F9B539360582011E5CEFEFBBF8E /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18EE142850EA42A042D6EF38031FA977 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3DFD478B745416CA3B1ABCCA01CF66E /* Pods-BibleReadingChallenge */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58BC19D3943C0E7D6DA8E6049C4D73C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97226053C9A4D962B6CFDF222B8ACEFA /* TinyConstraints.framework */,
+				F0B05771002946ED71B23EEB433CA61C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C9CD165EE63806C589809E077F6EAF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A50409944262AB4D2744657831B9210 /* Gauge.framework */,
+				CB47D3BA595681FAE5F4E37474408AE2 /* Pods_BibleReadingChallenge.framework */,
+				D2093BDDAF8C23069AF8CFF67A15EC62 /* TinyConstraints.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		AE01874CA0D37F65BDEF141B042CA8FE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				878A718DCC5DDC01D664E6B7AAC62E1B /* Gauge.modulemap */,
+				1D1A37BBF5633A7F69D31F3A7DF2ED70 /* Gauge.xcconfig */,
+				3D08A8C0C88909D5FFBDA0F5EDA73996 /* Gauge-dummy.m */,
+				C22CA4973450CF6D1CB3D08CB713BB13 /* Gauge-Info.plist */,
+				7A0079B632EC8CC18959290848F89353 /* Gauge-prefix.pch */,
+				D771DE16B7F94BDB2F64A569CDCF8C4B /* Gauge-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/Gauge";
+			sourceTree = "<group>";
+		};
+		B0F98F9B539360582011E5CEFEFBBF8E /* TinyConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				78FDB781C45B08D9058CF53A7C0FDBE3 /* Abstraction.swift */,
+				34530421371110655D5CEFFFF260BBDB /* Constrainable.swift */,
+				FECD108306EE34319E6D639CA5D4464F /* Constraints.swift */,
+				FEBF97A4C55B9F6C989D6F8EB570EE02 /* Stack.swift */,
+				8A141AC726A5CF6F279BB94AA8C39E98 /* TinyConstraints.swift */,
+				395966FFC76D3BC78FDA1850B2C9F699 /* TinyConstraints+superview.swift */,
+				F60447B996D631117572B444488CF0AE /* TinyEdgeInsets.swift */,
+				E1DF1E212F15F67BCCF3A9DAF56F53CA /* Support Files */,
+			);
+			name = TinyConstraints;
+			path = TinyConstraints;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				882432F49C3DF82A1BACDBEB180A3E55 /* Products */,
-				E9C0E0F610695CA8466B7716AC8ED7A7 /* Targets Support Files */,
+				58BC19D3943C0E7D6DA8E6049C4D73C0 /* Frameworks */,
+				04C1A2BCAF3B94FDEF818CA06603BE55 /* Pods */,
+				5C9CD165EE63806C589809E077F6EAF9 /* Products */,
+				18EE142850EA42A042D6EF38031FA977 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		CF4960220A14EDC0D36F3DEE0B7BCA96 /* Gauge */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				5655F99C2761DDA59955926E1DD623AB /* Angle.swift */,
+				7F165C131C8B9C9A496C81541383D535 /* DefaultGaugeHand.swift */,
+				BACE6E4BEC0DE430D369E476425ACA89 /* DefaultGaugeSectionLabel.swift */,
+				2070D7CDB3D500E104BC95C8AEF60AD0 /* Gauge.swift */,
+				6B720DD96E31DF8B8B3350660131FBD6 /* GaugeHand.swift */,
+				287A5D1AFC6E9F9EF47A4529094F2527 /* GaugeSection.swift */,
+				C32BF831AE4FC6E7D1CFDBEFDF6AA9C6 /* GaugeSectionLabel.swift */,
+				180E4FD615A0CB2E72B6D5B20E40CCD4 /* Value.swift */,
+				AE01874CA0D37F65BDEF141B042CA8FE /* Support Files */,
 			);
-			name = Frameworks;
+			name = Gauge;
+			path = Gauge;
 			sourceTree = "<group>";
 		};
-		E9C0E0F610695CA8466B7716AC8ED7A7 /* Targets Support Files */ = {
+		E1DF1E212F15F67BCCF3A9DAF56F53CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3316F602C9CFEADBC27A53F282A65B4 /* Pods-BibleReadingChallenge */,
+				733DF14D5915150A8586B6A32D65B8E1 /* TinyConstraints.modulemap */,
+				119739C9A0C197B38D9EAD04CA30CD57 /* TinyConstraints.xcconfig */,
+				A3900884EF8DE2043544B47820E48D43 /* TinyConstraints-dummy.m */,
+				99EB08F63000A7D9E7FF9B0C85C61ED1 /* TinyConstraints-Info.plist */,
+				E54F5D8E30A1855363333CE4B9D8AE50 /* TinyConstraints-prefix.pch */,
+				0DA5E3A17AEBD83DB44ED5A44D40E706 /* TinyConstraints-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
 			sourceTree = "<group>";
 		};
-		F3316F602C9CFEADBC27A53F282A65B4 /* Pods-BibleReadingChallenge */ = {
+		E3DFD478B745416CA3B1ABCCA01CF66E /* Pods-BibleReadingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				6C03A3BA6DBB49A6310A851127241DDF /* Pods-BibleReadingChallenge.modulemap */,
-				B5A272B106464EF9E22575BC6C8B808A /* Pods-BibleReadingChallenge-acknowledgements.markdown */,
-				84A40AE70380361025FBCDEA7E25BBD8 /* Pods-BibleReadingChallenge-acknowledgements.plist */,
-				81D1CBB2EF0CFEB7CA13810C0855E1DF /* Pods-BibleReadingChallenge-dummy.m */,
-				0224617B7D187DF09A703331432FE808 /* Pods-BibleReadingChallenge-Info.plist */,
-				334E524A391A00E977590B1782DA6B84 /* Pods-BibleReadingChallenge-umbrella.h */,
-				0BB683D300D80AC8A2C3FEDCDEDA6C49 /* Pods-BibleReadingChallenge.debug.xcconfig */,
-				3C7F287BE9AF90D6D38B08D2E5767DC3 /* Pods-BibleReadingChallenge.release.xcconfig */,
+				3A1579CE36BE4C683773806EFF2D552D /* Pods-BibleReadingChallenge.modulemap */,
+				7C4F8CF94B906A15D6606EF4DFCFBBE7 /* Pods-BibleReadingChallenge-acknowledgements.markdown */,
+				BCA02B5B488231A8B82D0D2BF0E7491A /* Pods-BibleReadingChallenge-acknowledgements.plist */,
+				10C7FFB31E9D59D8F1A2B1A1AD1B8765 /* Pods-BibleReadingChallenge-dummy.m */,
+				737504CC797A995F756D9A1A78864911 /* Pods-BibleReadingChallenge-frameworks.sh */,
+				3FDA03B850AAB762132988C9138B9968 /* Pods-BibleReadingChallenge-Info.plist */,
+				78BD8EDBAC0144A09C4588A691B6999E /* Pods-BibleReadingChallenge-umbrella.h */,
+				A61B0747AC744E44222C3742ACECED71 /* Pods-BibleReadingChallenge.debug.xcconfig */,
+				43EC22077B06E0073CF4162D186EA78F /* Pods-BibleReadingChallenge.release.xcconfig */,
 			);
 			name = "Pods-BibleReadingChallenge";
 			path = "Target Support Files/Pods-BibleReadingChallenge";
 			sourceTree = "<group>";
 		};
+		F0B05771002946ED71B23EEB433CA61C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				00B2342662F33D8D969197ADCD0FEA10 /* Foundation.framework */,
+				5F2B3CF3BE942C47293AC05F3E42ED75 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		420721D956C513A9A5362568E2F3A892 /* Headers */ = {
+		2CF8F6C0CCA03CCE16330C826144499C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70D0DD83B57780DD0AF04627389C205 /* Pods-BibleReadingChallenge-umbrella.h in Headers */,
+				7107209629C31BEDA08363598ABCE2C2 /* Pods-BibleReadingChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AEB04440AF46256B54C52E55368F51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3762373157ECBFD1CFAA6223E1AEDD /* TinyConstraints-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680392ACF5E359146CA4FCA467B88727 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE61F70ACD47512E64CAD45F0D8F28 /* Gauge-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9A23241D9C9F69E52EC536F06AD56FB1 /* Pods-BibleReadingChallenge */ = {
+		1746B57FA8D4A5C2C5F3DB2C7A74E22E /* TinyConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A8DF44D2F038836C9A4C6D47D31A236 /* Build configuration list for PBXNativeTarget "Pods-BibleReadingChallenge" */;
+			buildConfigurationList = 7B8CD8AB50249ACA52F8E80240728B82 /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
 			buildPhases = (
-				420721D956C513A9A5362568E2F3A892 /* Headers */,
-				F7754AA44770B5E52A3E9019DCD7D1EC /* Sources */,
-				C872AA0934814AF67BC4923F05859385 /* Frameworks */,
-				189A0EF5C9BD4329A5036B93001A20A2 /* Resources */,
+				55AEB04440AF46256B54C52E55368F51 /* Headers */,
+				9FDF6F4A6476F46E67B649A720AB9DCA /* Sources */,
+				ED2AF31E90F4EA4FD718F5A3C6DFB46D /* Frameworks */,
+				B5BE4BDA5FEF199F3FD0E0B376390D1D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = D2093BDDAF8C23069AF8CFF67A15EC62 /* TinyConstraints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32F3A6C03C273EE52424DF4FDDB39AD6 /* Pods-BibleReadingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A85BD444513505A9EC9320CBE3B925F /* Build configuration list for PBXNativeTarget "Pods-BibleReadingChallenge" */;
+			buildPhases = (
+				2CF8F6C0CCA03CCE16330C826144499C /* Headers */,
+				66C4468FE644E7AD2FE74322FC008B67 /* Sources */,
+				E5FBA2D6BCF1D02E23030187AFB9AD82 /* Frameworks */,
+				9E1ED3DBBECFC85C5D4B6FDC8355339F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47EF00B75EC4D253515C9A8514B6D1D /* PBXTargetDependency */,
+				045636E6BB360A232BA4479CB3BE60AF /* PBXTargetDependency */,
+			);
 			name = "Pods-BibleReadingChallenge";
 			productName = "Pods-BibleReadingChallenge";
-			productReference = CDB77A21FF9AA61494986C94B75E60DF /* Pods_BibleReadingChallenge.framework */;
+			productReference = CB47D3BA595681FAE5F4E37474408AE2 /* Pods_BibleReadingChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89277A52DE808C1302F990F686FC07E4 /* Gauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766B4B4461C77888EBDAE2AB938C2DD5 /* Build configuration list for PBXNativeTarget "Gauge" */;
+			buildPhases = (
+				680392ACF5E359146CA4FCA467B88727 /* Headers */,
+				98DF2CAA81168FAC8AC4200B9F7AC2DB /* Sources */,
+				101A49B32F8B9694CFE4079AC9A244AB /* Frameworks */,
+				5CC6ED51F958C188FB9CFF7179E0DEB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDDAA97057F9720991CABA541EC07BE5 /* PBXTargetDependency */,
+			);
+			name = Gauge;
+			productName = Gauge;
+			productReference = 6A50409944262AB4D2744657831B9210 /* Gauge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -145,17 +373,33 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 882432F49C3DF82A1BACDBEB180A3E55 /* Products */;
+			productRefGroup = 5C9CD165EE63806C589809E077F6EAF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A23241D9C9F69E52EC536F06AD56FB1 /* Pods-BibleReadingChallenge */,
+				89277A52DE808C1302F990F686FC07E4 /* Gauge */,
+				32F3A6C03C273EE52424DF4FDDB39AD6 /* Pods-BibleReadingChallenge */,
+				1746B57FA8D4A5C2C5F3DB2C7A74E22E /* TinyConstraints */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		189A0EF5C9BD4329A5036B93001A20A2 /* Resources */ = {
+		5CC6ED51F958C188FB9CFF7179E0DEB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1ED3DBBECFC85C5D4B6FDC8355339F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BE4BDA5FEF199F3FD0E0B376390D1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,23 +409,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F7754AA44770B5E52A3E9019DCD7D1EC /* Sources */ = {
+		66C4468FE644E7AD2FE74322FC008B67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332D6C1C862D381EF5E58C7C87AB5235 /* Pods-BibleReadingChallenge-dummy.m in Sources */,
+				1EC199B46864788C24BB894250E2234B /* Pods-BibleReadingChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DF2CAA81168FAC8AC4200B9F7AC2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45309A6AE5D13A8E95457E2620DD53D5 /* Angle.swift in Sources */,
+				79D6A036062357A98BA553CF420795A5 /* DefaultGaugeHand.swift in Sources */,
+				85E86412651790B83729D85AC6CCC5E8 /* DefaultGaugeSectionLabel.swift in Sources */,
+				7B6FE8888F173F6379E4FD7C0C3202BD /* Gauge-dummy.m in Sources */,
+				A1F907F50C4F97E744913F97FF24AFF6 /* Gauge.swift in Sources */,
+				E82F670F50641DD9D302E5CC80B4BA99 /* GaugeHand.swift in Sources */,
+				E3996A59BA9B8B0E30C876F968D29283 /* GaugeSection.swift in Sources */,
+				2C1CE0DBE61D81482636E73BFC455C5F /* GaugeSectionLabel.swift in Sources */,
+				5EEC3226F1E8BEE9436646822EF5A761 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FDF6F4A6476F46E67B649A720AB9DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20718729509CAB5872771EF0285600 /* Abstraction.swift in Sources */,
+				82A90AC3DE93F9C549607477AE805DC9 /* Constrainable.swift in Sources */,
+				10D9AB8027692FE37124777C8ED6D876 /* Constraints.swift in Sources */,
+				0C4F6BDED7A940165F0FD9EEBBFB973F /* Stack.swift in Sources */,
+				B1A44BDC92CF876FE1F5CAA82800621A /* TinyConstraints+superview.swift in Sources */,
+				AA596645771D31C00BE255B0EF57DCAA /* TinyConstraints-dummy.m in Sources */,
+				34DFC88B31BC8CCDFB438FAECEF76ACB /* TinyConstraints.swift in Sources */,
+				E4BD9CBBF47D6F34EC1298CE4B6B752D /* TinyEdgeInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		045636E6BB360A232BA4479CB3BE60AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 1746B57FA8D4A5C2C5F3DB2C7A74E22E /* TinyConstraints */;
+			targetProxy = 3BCEF5FCC968B11BD4FD810ECA9BC1C8 /* PBXContainerItemProxy */;
+		};
+		CDDAA97057F9720991CABA541EC07BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 1746B57FA8D4A5C2C5F3DB2C7A74E22E /* TinyConstraints */;
+			targetProxy = A11FE84E89F957776738B87286F83B79 /* PBXContainerItemProxy */;
+		};
+		F47EF00B75EC4D253515C9A8514B6D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gauge;
+			target = 89277A52DE808C1302F990F686FC07E4 /* Gauge */;
+			targetProxy = 345002DD330D91FFA932FAB334460625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		251E4884FC4CDA45B3E2DB200D8B6EEC /* Release */ = {
+		02DDDB32A41ABCBF1757EC0ADF75FBB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C7F287BE9AF90D6D38B08D2E5767DC3 /* Pods-BibleReadingChallenge.release.xcconfig */;
+			baseConfigurationReference = 119739C9A0C197B38D9EAD04CA30CD57 /* TinyConstraints.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -191,67 +485,63 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3800C8031234EB123CFD1A627C3CB97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D1A37BBF5633A7F69D31F3A7DF2ED70 /* Gauge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gauge/Gauge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gauge/Gauge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gauge/Gauge.modulemap";
+				PRODUCT_MODULE_NAME = Gauge;
+				PRODUCT_NAME = Gauge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		2FA650B4C3ADA35C8EC5093DDE214D5A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BB683D300D80AC8A2C3FEDCDEDA6C49 /* Pods-BibleReadingChallenge.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		4093433A309EFE160336AC736594AB22 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -317,6 +607,45 @@
 			};
 			name = Debug;
 		};
+		8A8F21D5FEC37F1FC395F4223D34BFEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EC22077B06E0073CF4162D186EA78F /* Pods-BibleReadingChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		924D56B1D59CD3049300EAEEA256114E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,14 +706,123 @@
 			};
 			name = Release;
 		};
+		9311D8D7112C9BFFF6519EE9B26350FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 119739C9A0C197B38D9EAD04CA30CD57 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93DBC46194010E868004B248F7FBFC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D1A37BBF5633A7F69D31F3A7DF2ED70 /* Gauge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gauge/Gauge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gauge/Gauge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gauge/Gauge.modulemap";
+				PRODUCT_MODULE_NAME = Gauge;
+				PRODUCT_NAME = Gauge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9716B0DCE4122DBDCE604BFACBB4CE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61B0747AC744E44222C3742ACECED71 /* Pods-BibleReadingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A8DF44D2F038836C9A4C6D47D31A236 /* Build configuration list for PBXNativeTarget "Pods-BibleReadingChallenge" */ = {
+		2A85BD444513505A9EC9320CBE3B925F /* Build configuration list for PBXNativeTarget "Pods-BibleReadingChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FA650B4C3ADA35C8EC5093DDE214D5A /* Debug */,
-				251E4884FC4CDA45B3E2DB200D8B6EEC /* Release */,
+				9716B0DCE4122DBDCE604BFACBB4CE17 /* Debug */,
+				8A8F21D5FEC37F1FC395F4223D34BFEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -394,6 +832,24 @@
 			buildConfigurations = (
 				4093433A309EFE160336AC736594AB22 /* Debug */,
 				924D56B1D59CD3049300EAEEA256114E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766B4B4461C77888EBDAE2AB938C2DD5 /* Build configuration list for PBXNativeTarget "Gauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DBC46194010E868004B248F7FBFC93 /* Debug */,
+				3800C8031234EB123CFD1A627C3CB97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B8CD8AB50249ACA52F8E80240728B82 /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DDDB32A41ABCBF1757EC0ADF75FBB2 /* Debug */,
+				9311D8D7112C9BFFF6519EE9B26350FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

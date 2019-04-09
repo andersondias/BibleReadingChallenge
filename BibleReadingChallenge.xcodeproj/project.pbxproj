@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E489C38AC9E0156A91E21B5 /* Pods_BibleReadingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599834BF7C2D09FA6B0BA5D /* Pods_BibleReadingChallenge.framework */; };
 		7A72713D225C2DB200E767CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72713C225C2DB200E767CC /* Book.swift */; };
 		7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4A225BA248000B622E /* AppDelegate.swift */; };
 		7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4C225BA248000B622E /* DashboardViewController.swift */; };
@@ -21,7 +22,6 @@
 		7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */; };
 		7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */; };
 		7AB3A2BC225D09A5001DAC17 /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */; };
-		81F2E82C2A910CF3260FB566 /* Pods_BibleReadingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C55B4EF343EC068668FC4D1 /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.release.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		4599834BF7C2D09FA6B0BA5D /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleReadingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FDFEF26BF6AF41F70A4528 /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		7A72713C225C2DB200E767CC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		7A934E47225BA248000B622E /* BibleReadingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReadingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A934E4A225BA248000B622E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +65,6 @@
 		7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterButton.swift; sourceTree = "<group>"; };
 		7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
-		95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.release.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleReadingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F2E82C2A910CF3260FB566 /* Pods_BibleReadingChallenge.framework in Frameworks */,
+				3E489C38AC9E0156A91E21B5 /* Pods_BibleReadingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5804CC51A742F8F18FC5A6C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4599834BF7C2D09FA6B0BA5D /* Pods_BibleReadingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A72CE29225D1EC400E31EAF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +119,7 @@
 				7A934E6B225BA24A000B622E /* BibleReadingChallengeUITests */,
 				7A934E48225BA248000B622E /* Products */,
 				A658638CC71BBC5E10C314CC /* Pods */,
-				A2CAEA7BFD99A899FAC2E6E5 /* Frameworks */,
+				5804CC51A742F8F18FC5A6C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,19 +225,11 @@
 			path = BooksController;
 			sourceTree = "<group>";
 		};
-		A2CAEA7BFD99A899FAC2E6E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A658638CC71BBC5E10C314CC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */,
-				B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */,
+				63FDFEF26BF6AF41F70A4528 /* Pods-BibleReadingChallenge.debug.xcconfig */,
+				3C55B4EF343EC068668FC4D1 /* Pods-BibleReadingChallenge.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -241,10 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A934E71225BA24A000B622E /* Build configuration list for PBXNativeTarget "BibleReadingChallenge" */;
 			buildPhases = (
-				C6EB77BED52CA91D8063FBC3 /* [CP] Check Pods Manifest.lock */,
+				76896C05D608DD409769986F /* [CP] Check Pods Manifest.lock */,
 				7A934E43225BA248000B622E /* Sources */,
 				7A934E44225BA248000B622E /* Frameworks */,
 				7A934E45225BA248000B622E /* Resources */,
+				708479B54C5061F35F63177D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,7 +363,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C6EB77BED52CA91D8063FBC3 /* [CP] Check Pods Manifest.lock */ = {
+		708479B54C5061F35F63177D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Gauge/Gauge.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gauge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76896C05D608DD409769986F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -572,7 +597,7 @@
 		};
 		7A934E72225BA24A000B622E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */;
+			baseConfigurationReference = 63FDFEF26BF6AF41F70A4528 /* Pods-BibleReadingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,7 +616,7 @@
 		};
 		7A934E73225BA24A000B622E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */;
+			baseConfigurationReference = 3C55B4EF343EC068668FC4D1 /* Pods-BibleReadingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

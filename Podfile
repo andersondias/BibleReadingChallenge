@@ -3,5 +3,5 @@ platform :ios, '12.0'
 use_frameworks!
 
 target "BibleReadingChallenge" do
-  #pod "GaugeKit"
+  pod "Gauge"
 end

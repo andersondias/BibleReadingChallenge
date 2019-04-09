@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 7f57f15e9266ffb5d1aca097a7f4f643bef8f86c
+PODS:
+  - Gauge (1.0.0):
+    - TinyConstraints (~> 3.2.1)
+  - TinyConstraints (3.2.1)
+
+DEPENDENCIES:
+  - Gauge
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Gauge
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Gauge: 85c29705a95385ab7a55adedb0f8b66444f954d1
+  TinyConstraints: 5ca700872f726c49d10829d7b00f31e4ec731f36
+
+PODFILE CHECKSUM: 4c3da3453c12c26c0545c3e722d91d8eb4915507
 
 COCOAPODS: 1.6.1
