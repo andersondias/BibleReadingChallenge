@@ -37,11 +37,14 @@
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4" userLabel="I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" image="Dashboard" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="dashTitle" destination="KQZ-1w-vlD" id="dPV-v4-DoE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +94,9 @@
                                             <rect key="frame" x="-25" y="10" width="101" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="ChapterButton"/>
+                                            <connections>
+                                                <action selector="chapterButtonTappedWithButton:" destination="oBv-Je-zj2" eventType="touchUpInside" id="ZZ9-OW-CSh"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>

@@ -13,4 +13,21 @@ import UIKit
     //MARK: Properties
 
     @IBOutlet weak var chapterNumberButton: ChapterButton!
+    var book: Book?
+    
+    func configure(book: Book, chapter: Int) {
+        self.book = book
+
+        chapterNumberButton.chapter = chapter
+    }
+    
+    @IBAction func chapterButtonTapped(button: ChapterButton) {
+        if let index = book?.readChapters.firstIndex(of: button.chapter) {
+            book?.readChapters.remove(at: index)
+            button.setTitleColor(nil, for: .normal)
+        } else {
+            button.setTitleColor(UIColor.red, for: .normal)
+            book?.readChapters.append(button.chapter)
+        }
+    }
 }

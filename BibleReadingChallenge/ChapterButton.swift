@@ -9,9 +9,11 @@
 import UIKit
 
 class ChapterButton: UIButton {
-
-    var book: Book?
-    var chapter: Int = 0
+    var chapter: Int = 0 {
+        didSet {
+            setTitle("\(chapter)", for: .normal)
+        }
+    }
 
     /*
     // Only override draw() if you perform custom drawing.
