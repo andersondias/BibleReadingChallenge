@@ -10,13 +10,14 @@
 		7A72713D225C2DB200E767CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72713C225C2DB200E767CC /* Book.swift */; };
 		7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4A225BA248000B622E /* AppDelegate.swift */; };
 		7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4C225BA248000B622E /* DashboardViewController.swift */; };
-		7A934E4F225BA248000B622E /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4E225BA248000B622E /* BooksViewController.swift */; };
 		7A934E52225BA248000B622E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A934E50225BA248000B622E /* Main.storyboard */; };
 		7A934E54225BA24A000B622E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A934E53225BA24A000B622E /* Assets.xcassets */; };
 		7A934E57225BA24A000B622E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A934E55225BA24A000B622E /* LaunchScreen.storyboard */; };
 		7A934E62225BA24A000B622E /* BibleReadingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E61225BA24A000B622E /* BibleReadingChallengeTests.swift */; };
 		7A934E6D225BA24A000B622E /* BibleReadingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E6C225BA24A000B622E /* BibleReadingChallengeUITests.swift */; };
 		7AA4E8DF225C427D00889F36 /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8DE225C427D00889F36 /* BookTests.swift */; };
+		7AA4E8E1225C454A00889F36 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8E0225C454A00889F36 /* BookTableViewCell.swift */; };
+		7AA4E8E3225C473200889F36 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8E2225C473200889F36 /* BookTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		7A934E47225BA248000B622E /* BibleReadingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReadingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A934E4A225BA248000B622E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A934E4C225BA248000B622E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		7A934E4E225BA248000B622E /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		7A934E51225BA248000B622E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A934E53225BA24A000B622E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A934E56225BA24A000B622E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		7A934E6C225BA24A000B622E /* BibleReadingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleReadingChallengeUITests.swift; sourceTree = "<group>"; };
 		7A934E6E225BA24A000B622E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AA4E8DE225C427D00889F36 /* BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
+		7AA4E8E0225C454A00889F36 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		7AA4E8E2225C473200889F36 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +108,12 @@
 				7A934E4A225BA248000B622E /* AppDelegate.swift */,
 				7A72713C225C2DB200E767CC /* Book.swift */,
 				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
-				7A934E4E225BA248000B622E /* BooksViewController.swift */,
 				7A934E50225BA248000B622E /* Main.storyboard */,
 				7A934E53225BA24A000B622E /* Assets.xcassets */,
 				7A934E55225BA24A000B622E /* LaunchScreen.storyboard */,
 				7A934E58225BA24A000B622E /* Info.plist */,
+				7AA4E8E0225C454A00889F36 /* BookTableViewCell.swift */,
+				7AA4E8E2225C473200889F36 /* BookTableViewController.swift */,
 			);
 			path = BibleReadingChallenge;
 			sourceTree = "<group>";
@@ -266,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A72713D225C2DB200E767CC /* Book.swift in Sources */,
-				7A934E4F225BA248000B622E /* BooksViewController.swift in Sources */,
 				7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */,
+				7AA4E8E1225C454A00889F36 /* BookTableViewCell.swift in Sources */,
+				7AA4E8E3225C473200889F36 /* BookTableViewController.swift in Sources */,
 				7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
