@@ -21,6 +21,7 @@
 		7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */; };
 		7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */; };
 		7AB3A2BC225D09A5001DAC17 /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */; };
+		81F2E82C2A910CF3260FB566 /* Pods_BibleReadingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterButton.swift; sourceTree = "<group>"; };
 		7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
+		95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.release.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleReadingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F2E82C2A910CF3260FB566 /* Pods_BibleReadingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,8 @@
 				7A934E60225BA24A000B622E /* BibleReadingChallengeTests */,
 				7A934E6B225BA24A000B622E /* BibleReadingChallengeUITests */,
 				7A934E48225BA248000B622E /* Products */,
+				A658638CC71BBC5E10C314CC /* Pods */,
+				A2CAEA7BFD99A899FAC2E6E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,11 +159,8 @@
 		7AB3A2BE225D0CB9001DAC17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
-				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
-				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
-				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
-				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
+				7AB3A2C4225D187F001DAC17 /* BooksController */,
+				7AB3A2C3225D1875001DAC17 /* DashboardController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +190,42 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7AB3A2C3225D1875001DAC17 /* DashboardController */ = {
+			isa = PBXGroup;
+			children = (
+				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
+			);
+			path = DashboardController;
+			sourceTree = "<group>";
+		};
+		7AB3A2C4225D187F001DAC17 /* BooksController */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
+				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
+				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
+				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
+			);
+			path = BooksController;
+			sourceTree = "<group>";
+		};
+		A2CAEA7BFD99A899FAC2E6E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A658638CC71BBC5E10C314CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */,
+				B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A934E71225BA24A000B622E /* Build configuration list for PBXNativeTarget "BibleReadingChallenge" */;
 			buildPhases = (
+				C6EB77BED52CA91D8063FBC3 /* [CP] Check Pods Manifest.lock */,
 				7A934E43225BA248000B622E /* Sources */,
 				7A934E44225BA248000B622E /* Frameworks */,
 				7A934E45225BA248000B622E /* Resources */,
@@ -311,6 +352,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6EB77BED52CA91D8063FBC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BibleReadingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A934E43225BA248000B622E /* Sources */ = {
@@ -498,6 +564,7 @@
 		};
 		7A934E72225BA24A000B622E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +583,7 @@
 		};
 		7A934E73225BA24A000B622E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

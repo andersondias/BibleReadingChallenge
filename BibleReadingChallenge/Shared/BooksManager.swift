@@ -9,10 +9,18 @@
 class BooksManager {
     static let shared = BooksManager()
     var books = [Book]()
+    var numberOfChapters: Int {
+        return books.reduce(0) { (total, book) in
+            return total + book.numberOfChapters
+        }
+    }
     var numberOfReadChapters: Int {
         return books.reduce(0) { (total, book) in
             return total + book.readChapters.count
         }
+    }
+    var numberOfUnreadChapters: Int {
+        return numberOfChapters - numberOfReadChapters
     }
     
     private init() {
