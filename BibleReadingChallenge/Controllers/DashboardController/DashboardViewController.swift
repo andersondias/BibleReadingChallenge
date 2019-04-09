@@ -18,8 +18,8 @@ class DashboardViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        dashTitle.text = "\(BooksManager.shared.numberOfReadChapters) de \(BooksManager.shared.numberOfChapters) capítulos lidos"
-        progressLabel.text = "Progresso: \(numberOfChaptersToReadEverDay)"
+        dashTitle.text = "\(BooksManager.shared.numberOfReadChapters) de \(BooksManager.shared.numberOfChapters)"
+        progressLabel.text = "Leia \(numberOfChaptersToReadEverDay) capítulos por dia até o fim do ano."
     }
 
     private var daysTilTheEndOfYear: Int {
