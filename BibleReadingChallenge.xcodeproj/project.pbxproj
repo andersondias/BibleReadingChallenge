@@ -111,18 +111,13 @@
 		7A934E49225BA248000B622E /* BibleReadingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7AB3A2C1225D0D42001DAC17 /* Resources */,
+				7AB3A2C0225D0D1F001DAC17 /* Shared */,
+				7AB3A2BE225D0CB9001DAC17 /* Controllers */,
+				7AB3A2BD225D0C93001DAC17 /* Models */,
+				7AB3A2BF225D0CEF001DAC17 /* Views */,
 				7A934E4A225BA248000B622E /* AppDelegate.swift */,
-				7A72713C225C2DB200E767CC /* Book.swift */,
-				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
-				7A934E50225BA248000B622E /* Main.storyboard */,
-				7A934E53225BA24A000B622E /* Assets.xcassets */,
-				7A934E55225BA24A000B622E /* LaunchScreen.storyboard */,
 				7A934E58225BA24A000B622E /* Info.plist */,
-				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
-				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
-				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
-				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
-				7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */,
 			);
 			path = BibleReadingChallenge;
 			sourceTree = "<group>";
@@ -144,6 +139,51 @@
 				7A934E6E225BA24A000B622E /* Info.plist */,
 			);
 			path = BibleReadingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		7AB3A2BD225D0C93001DAC17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A72713C225C2DB200E767CC /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7AB3A2BE225D0CB9001DAC17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
+				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
+				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
+				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
+				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7AB3A2BF225D0CEF001DAC17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A934E50225BA248000B622E /* Main.storyboard */,
+				7A934E55225BA24A000B622E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AB3A2C0225D0D1F001DAC17 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7AB3A2C1225D0D42001DAC17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A934E53225BA24A000B622E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
