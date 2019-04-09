@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "ChapterCollectionViewCell"
-
 class BooksCollectionViewController: UICollectionViewController {
     var books: [Book] {
         return BooksManager.shared.books
@@ -51,21 +49,18 @@ class BooksCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ChapterCollectionViewCell {
-            cell.configure(book: books[indexPath.section], chapter: indexPath.item + 1)
-            
-            return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChapterCollectionViewCell", for: indexPath) as? ChapterCollectionViewCell {
+            return cell.configure(book: books[indexPath.section], chapter: indexPath.item + 1)
         }
     
         return UICollectionViewCell()
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
         if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? BookHeaderCollectionReusableView{
-            sectionHeader.BookTitleLabel.text = books[indexPath.section].title
-            return sectionHeader
+            return sectionHeader.configure(book: books[indexPath.section])
         }
+
         return UICollectionReusableView()
     }
 

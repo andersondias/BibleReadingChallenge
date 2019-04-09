@@ -11,4 +11,8 @@ import UIKit
 class BookHeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var BookTitleLabel: UILabel!
     
+    func configure(book: Book) -> BookHeaderCollectionReusableView{
+        BookTitleLabel.text = book.title
+        return self
+    }
 }
