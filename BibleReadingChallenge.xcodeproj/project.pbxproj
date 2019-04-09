@@ -19,6 +19,7 @@
 		7AA4E8E9225C528100889F36 /* ChapterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */; };
 		7AA4E8EB225C586200889F36 /* BooksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */; };
 		7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */; };
+		7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewController.swift; sourceTree = "<group>"; };
 		7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
 				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
 				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
+				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
 			);
 			path = BibleReadingChallenge;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				7A72713D225C2DB200E767CC /* Book.swift in Sources */,
 				7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */,
 				7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */,
+				7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */,
 				7AA4E8EB225C586200889F36 /* BooksCollectionViewController.swift in Sources */,
 				7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */,
 			);

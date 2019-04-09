@@ -14,6 +14,7 @@ class Book {
 
     var title: String
     var numberOfChapters: Int
+    var readChapters: [Int] = []
  
     //MARK: Initialization
     

@@ -9,6 +9,8 @@
 import UIKit
 
 @IBDesignable class ChapterCollectionViewCell: UICollectionViewCell {
+
     //MARK: Properties
-    @IBOutlet weak var chapterNumberLabel: UILabel!
+
+    @IBOutlet weak var chapterNumberButton: ChapterButton!
 }

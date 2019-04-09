@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "ChapterCollectionViewCell"
 
 class BooksCollectionViewController: UICollectionViewController {
     var books = [Book]()
@@ -20,7 +20,8 @@ class BooksCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        // TODO: Quando é melhor usar o register? Por que usar?
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView!.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
 
         // Do any additional setup after loading the view.
@@ -49,14 +50,30 @@ class BooksCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.red
-        
-        // Configure the cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ChapterCollectionViewCell {
+            
+            cell.chapterNumberButton.book = books[indexPath.section]
+            cell.chapterNumberButton.chapter = indexPath.item + 1
+            cell.chapterNumberButton.setTitle(String(cell.chapterNumberButton.chapter), for: .normal)
+            
+            cell.chapterNumberButton.addTarget(self, action: #selector(BooksCollectionViewController.chapterButtonTapped(button:)), for: .touchUpInside)
+            
+            return cell
+        }
     
-        return cell
+        return UICollectionViewCell()
     }
 
+    @objc func chapterButtonTapped(button: ChapterButton) {
+        if let index = button.book?.readChapters.firstIndex(of: button.chapter) {
+            button.book?.readChapters.remove(at: index)
+            button.setTitleColor(nil, for: .normal)
+        } else {
+            button.setTitleColor(UIColor.red, for: .normal)
+            button.book?.readChapters.append(button.chapter)
+        }
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? BookHeaderCollectionReusableView{
