@@ -19,7 +19,4 @@ class DashboardViewController: UIViewController {
         super.viewWillAppear(animated)
         dashTitle.text = "\(BooksManager.shared.numberOfReadChapters)"
     }
-
-
 }
-
