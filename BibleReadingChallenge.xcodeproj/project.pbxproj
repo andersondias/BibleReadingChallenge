@@ -93,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A72CE29225D1EC400E31EAF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
+				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
+				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7A934E3E225BA248000B622E = {
 			isa = PBXGroup;
 			children = (
@@ -201,10 +211,8 @@
 		7AB3A2C4225D187F001DAC17 /* BooksController */ = {
 			isa = PBXGroup;
 			children = (
+				7A72CE29225D1EC400E31EAF /* Components */,
 				7AA4E8EA225C586200889F36 /* BooksCollectionViewController.swift */,
-				7AA4E8E8225C528100889F36 /* ChapterCollectionViewCell.swift */,
-				7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */,
-				7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */,
 			);
 			path = BooksController;
 			sourceTree = "<group>";
