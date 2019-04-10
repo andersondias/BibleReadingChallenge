@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Resumo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="144" y="427" width="126.5" height="43"/>
+                                <rect key="frame" x="144" y="426.5" width="126.5" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -117,9 +117,18 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-oO-GQg">
+                                    <rect key="frame" x="244" y="10" width="162" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Marcar todos como lido"/>
+                                    <connections>
+                                        <action selector="markAllClicked:" destination="Ra9-E9-SmM" eventType="touchUpInside" id="MZq-Dp-ehN"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <connections>
                                 <outlet property="BookTitleLabel" destination="a6C-GO-ehK" id="vDo-oG-GMB"/>
+                                <outlet property="markAllButton" destination="fV2-oO-GQg" id="bBy-XK-aB7"/>
                             </connections>
                         </collectionReusableView>
                         <connections>

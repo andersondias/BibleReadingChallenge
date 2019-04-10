@@ -30,8 +30,10 @@ class BooksManager {
     }
     
     func readChapter(book: Book, chapter: Int) {
-        book.readChapters.append(chapter)
-        update()
+        if book.readChapters.firstIndex(of: chapter) == nil {
+            book.readChapters.append(chapter)
+            update()
+        }
     }
 
     func unreadChapter(book: Book, chapter: Int) {

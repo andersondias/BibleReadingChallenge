@@ -10,8 +10,23 @@ import UIKit
 
 class BookHeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var BookTitleLabel: UILabel!
-    
-    func configure(book: Book) -> BookHeaderCollectionReusableView{
+    @IBOutlet weak var markAllButton: UIButton!
+
+    var book: Book?
+
+    @IBAction func markAllClicked(_ sender: Any) {
+        if book == nil {
+            return
+        }
+
+        for chapter in 1...book!.numberOfChapters {
+            BooksManager.shared.readChapter(book: book!, chapter: chapter)
+        }
+    }
+
+    func configure(book: Book) -> BookHeaderCollectionReusableView {
+        self.book = book
+
         BookTitleLabel.text = book.title
         return self
     }
