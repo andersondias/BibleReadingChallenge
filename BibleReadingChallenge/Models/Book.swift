@@ -65,7 +65,7 @@ class Book: NSObject, NSCoding {
         aCoder.encode(readChapters, forKey: PropertyKey.readChapters)
     }
     
-    func chapterIsRead(chapter: Int) -> Bool {
+    func chapterIsRead(_ chapter: Int) -> Bool {
         return readChapters.firstIndex(of: chapter) != nil
     }
 }
