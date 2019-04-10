@@ -14,4 +14,12 @@ class ChapterButton: UIButton {
             setTitle("\(chapter)", for: .normal)
         }
     }
+    
+    func setRead(_ read: Bool) {
+        if read {
+            setTitleColor(UIColor.green, for: .normal)
+        } else {
+            setTitleColor(nil, for: .normal)
+        }
+    }
 }

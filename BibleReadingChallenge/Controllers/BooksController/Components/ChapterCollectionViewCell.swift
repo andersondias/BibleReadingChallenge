@@ -14,21 +14,36 @@ import UIKit
 
     @IBOutlet weak var chapterNumberButton: ChapterButton!
     var book: Book?
+    var chapter: Int = 0 {
+        didSet {
+            chapterNumberButton.chapter = chapter
+        }
+    }
+    
+    var read: Bool? {
+        didSet {
+            chapterNumberButton.setRead(read!)
+        }
+    }
     
     func configure(book: Book, chapter: Int) -> ChapterCollectionViewCell {
         self.book = book
+        self.chapter = chapter
+        self.read = book.chapterIsRead(chapter)
 
-        chapterNumberButton.chapter = chapter
         return self
     }
-    
+
     @IBAction func chapterButtonTapped(button: ChapterButton) {
-        if let index = book?.readChapters.firstIndex(of: button.chapter) {
-            book?.readChapters.remove(at: index)
-            button.setTitleColor(nil, for: .normal)
+        self.read = !(read ?? false)
+        updateBooks()
+    }
+    
+    private func updateBooks() {
+        if read! {
+            BooksManager.shared.readChapter(book: book!, chapter: chapter)
         } else {
-            button.setTitleColor(UIColor.red, for: .normal)
-            book?.readChapters.append(button.chapter)
+            BooksManager.shared.unreadChapter(book: book!, chapter: chapter)
         }
     }
 }
