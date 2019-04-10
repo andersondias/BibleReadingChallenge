@@ -19,16 +19,26 @@ import UIKit
         self.book = book
 
         chapterNumberButton.chapter = chapter
+        changeButtonState(read: book.chapterIsRead(chapter: chapter))
+
         return self
     }
     
-    @IBAction func chapterButtonTapped(button: ChapterButton) {
-        if let index = book?.readChapters.firstIndex(of: button.chapter) {
-            book?.readChapters.remove(at: index)
-            button.setTitleColor(nil, for: .normal)
+    func changeButtonState(read: Bool) {
+        if read {
+            chapterNumberButton.setTitleColor(UIColor.green, for: .normal)
         } else {
-            button.setTitleColor(UIColor.red, for: .normal)
-            book?.readChapters.append(button.chapter)
+            chapterNumberButton.setTitleColor(nil, for: .normal)
+        }
+    }
+
+    @IBAction func chapterButtonTapped(button: ChapterButton) {
+        if (book?.chapterIsRead(chapter: button.chapter))! {
+            BooksManager.shared.unreadChapter(book: book!, chapter: button.chapter)
+            changeButtonState(read: false)
+        } else {
+            changeButtonState(read: true)
+            BooksManager.shared.readChapter(book: book!, chapter: button.chapter)
         }
     }
 }
