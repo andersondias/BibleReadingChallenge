@@ -110,25 +110,27 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-GO-ehK">
-                                    <rect key="frame" x="8" y="15" width="398" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-GO-ehK">
+                                    <rect key="frame" x="10" y="10" width="178" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-oO-GQg">
-                                    <rect key="frame" x="242" y="10" width="162" height="30"/>
-                                    <state key="normal" title="Marcar todos como lido"/>
+                                    <rect key="frame" x="334" y="10" width="70" height="30"/>
+                                    <state key="normal" title="Já li todos"/>
                                     <connections>
                                         <action selector="markAllClicked:" destination="Ra9-E9-SmM" eventType="touchUpInside" id="MZq-Dp-ehN"/>
                                     </connections>
                                 </button>
                             </subviews>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="a6C-GO-ehK" secondAttribute="bottom" constant="10" id="cdn-oo-G7C"/>
                                 <constraint firstItem="fV2-oO-GQg" firstAttribute="top" secondItem="Ra9-E9-SmM" secondAttribute="top" constant="10" id="eQD-t9-Lh8"/>
                                 <constraint firstAttribute="bottom" secondItem="fV2-oO-GQg" secondAttribute="bottom" constant="10" id="hOs-7D-Lvi"/>
+                                <constraint firstItem="a6C-GO-ehK" firstAttribute="leading" secondItem="Ra9-E9-SmM" secondAttribute="leading" constant="10" id="udv-A2-8g9"/>
                                 <constraint firstAttribute="trailing" secondItem="fV2-oO-GQg" secondAttribute="trailing" constant="10" id="y60-7P-Ngh"/>
+                                <constraint firstItem="a6C-GO-ehK" firstAttribute="top" secondItem="Ra9-E9-SmM" secondAttribute="top" constant="10" id="yqv-eZ-MW8"/>
                             </constraints>
                             <connections>
                                 <outlet property="BookTitleLabel" destination="a6C-GO-ehK" id="vDo-oG-GMB"/>
