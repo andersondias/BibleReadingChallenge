@@ -12,6 +12,7 @@ class BooksManager {
     static let shared = BooksManager()
 
     var books = [Book]()
+    static let booksAbbreviations = ["Gn", "Êx", "Lv", "Nm", "Dt", "Js", "Jz", "Rt", "1Sm", "2Sm", "1Rs", "2Rs", "1Cr", "2Cr", "Ed", "Ne", "Et", "Jó", "Sl", "Pv", "Ec", "Ct", "Is", "Jr", "Lm", "Ez", "Dn", "Os", "Jl", "Am", "Ob", "Jn", "Mq", "Na", "Hc", "Sf", "Ag", "Zc", "Ml", "Mt", "Mc", "Lc", "Jo", "At", "Rm", "1Co", "2Co", "Gl", "Ef", "Fp", "Cl", "1Ts", "2Ts", "1Tm", "2Tm", "Tt", "Fm", "Hb", "Tg", "1Pe", "2Pe", "1Jo", "2Jo", "3Jo", "Jd", "Ap"]
 
     var numberOfChapters: Int {
         return books.reduce(0) { (total, book) in
@@ -27,6 +28,16 @@ class BooksManager {
 
     var numberOfUnreadChapters: Int {
         return numberOfChapters - numberOfReadChapters
+    }
+    
+    var numberOfChaptersToReadEverDay: Int {
+        var numberOfDays = numberOfDaysInFloat
+        numberOfDays.round(FloatingPointRoundingRule.up)
+        return Int(numberOfDays)
+    }
+    
+    private var numberOfDaysInFloat: Float {
+        return Float(numberOfUnreadChapters) / Float(daysTilTheEndOfYear)
     }
     
     func readChapter(book: Book, chapter: Int) {
@@ -135,5 +146,22 @@ class BooksManager {
             books = loadSampleBooks()
             update()
         }
+    }
+    
+    private var daysTilTheEndOfYear: Int {
+        // Get the current year
+        let year = Calendar.current.component(.year, from: Date())
+        
+        // Get the first day of next year
+        if let firstOfNextYear = Calendar.current.date(from: DateComponents(year: year + 1, month: 1, day: 1)) {
+            // Get the last day of the current year
+            if let lastOfYear = Calendar.current.date(byAdding: .day, value: -1, to: firstOfNextYear) {
+                if let diffInDays = Calendar.current.dateComponents([.day], from: Date(), to: lastOfYear).day {
+                    return diffInDays
+                }
+            }
+        }
+        
+        return 365
     }
 }
