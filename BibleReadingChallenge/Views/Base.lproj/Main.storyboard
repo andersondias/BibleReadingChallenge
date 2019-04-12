@@ -117,15 +117,19 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-oO-GQg">
-                                    <rect key="frame" x="244" y="10" width="162" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-oO-GQg">
+                                    <rect key="frame" x="242" y="10" width="162" height="30"/>
                                     <state key="normal" title="Marcar todos como lido"/>
                                     <connections>
                                         <action selector="markAllClicked:" destination="Ra9-E9-SmM" eventType="touchUpInside" id="MZq-Dp-ehN"/>
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="fV2-oO-GQg" firstAttribute="top" secondItem="Ra9-E9-SmM" secondAttribute="top" constant="10" id="eQD-t9-Lh8"/>
+                                <constraint firstAttribute="bottom" secondItem="fV2-oO-GQg" secondAttribute="bottom" constant="10" id="hOs-7D-Lvi"/>
+                                <constraint firstAttribute="trailing" secondItem="fV2-oO-GQg" secondAttribute="trailing" constant="10" id="y60-7P-Ngh"/>
+                            </constraints>
                             <connections>
                                 <outlet property="BookTitleLabel" destination="a6C-GO-ehK" id="vDo-oG-GMB"/>
                                 <outlet property="markAllButton" destination="fV2-oO-GQg" id="bBy-XK-aB7"/>
