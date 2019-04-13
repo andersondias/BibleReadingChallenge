@@ -33,6 +33,8 @@ class BookHeaderCollectionReusableView: UICollectionReusableView {
         BookTitleLabel.text = book.title
         if book.readChapters.count == book.numberOfChapters {
             markAllButton.isEnabled = false
+        } else {
+            markAllButton.isEnabled = true
         }
         return self
     }
