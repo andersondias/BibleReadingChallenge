@@ -19,41 +19,28 @@ class BookTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
     
     //MARK: Book Class Tests
     
     // Confirm that the Book initializer returns a Book object when passed valid parameters.
     func testBookInitializationSucceeds() {
         // One chapter book
-        let oneChapterBook = Book.init(title: "Filemon", numberOfChapters: 1)
+        let oneChapterBook = Book.init(title: "Filemon", numberOfChapters: 1, readChapters: [])
         XCTAssertNotNil(oneChapterBook)
         
         // Huge book
-        let longChapterBook = Book.init(title: "Mateus", numberOfChapters: 28)
+        let longChapterBook = Book.init(title: "Mateus", numberOfChapters: 28, readChapters: [])
         XCTAssertNotNil(longChapterBook)
     }
     
     // Confirm that the Book initialier returns nil when passed a negative rating or an empty name.
     func testBookInitializationFails() {
         // Zero chapters book
-        let zeroChapterBook = Book.init(title: "Filemon", numberOfChapters: 0)
+        let zeroChapterBook = Book.init(title: "Filemon", numberOfChapters: 0, readChapters: [])
         XCTAssertNil(zeroChapterBook)
         
         // Empty Title
-        let emptyTitleBook = Book.init(title: "", numberOfChapters: 1)
+        let emptyTitleBook = Book.init(title: "", numberOfChapters: 1, readChapters: [])
         XCTAssertNil(emptyTitleBook)
     }
 

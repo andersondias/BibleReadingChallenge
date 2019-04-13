@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A19926C2262547600EFD79E /* BooksManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19926B2262547600EFD79E /* BooksManagerTests.swift */; };
 		7A72713D225C2DB200E767CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72713C225C2DB200E767CC /* Book.swift */; };
 		7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4A225BA248000B622E /* AppDelegate.swift */; };
 		7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4C225BA248000B622E /* DashboardViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A19926B2262547600EFD79E /* BooksManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManagerTests.swift; sourceTree = "<group>"; };
 		7A72713C225C2DB200E767CC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		7A934E47225BA248000B622E /* BibleReadingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReadingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A934E4A225BA248000B622E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				7A934E61225BA24A000B622E /* BibleReadingChallengeTests.swift */,
 				7AA4E8DE225C427D00889F36 /* BookTests.swift */,
 				7A934E63225BA24A000B622E /* Info.plist */,
+				7A19926B2262547600EFD79E /* BooksManagerTests.swift */,
 			);
 			path = BibleReadingChallengeTests;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				7AA4E8DF225C427D00889F36 /* BookTests.swift in Sources */,
 				7A934E62225BA24A000B622E /* BibleReadingChallengeTests.swift in Sources */,
+				7A19926C2262547600EFD79E /* BooksManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
