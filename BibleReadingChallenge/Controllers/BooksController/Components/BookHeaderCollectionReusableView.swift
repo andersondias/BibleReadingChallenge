@@ -13,6 +13,7 @@ class BookHeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var markAllButton: UIButton!
 
     var book: Book?
+    var parentCollectionView: UICollectionView?
 
     @IBAction func markAllClicked(_ sender: Any) {
         if book == nil {
@@ -21,11 +22,13 @@ class BookHeaderCollectionReusableView: UICollectionReusableView {
 
         for chapter in 1...book!.numberOfChapters {
             BooksManager.shared.readChapter(book: book!, chapter: chapter)
+            parentCollectionView?.reloadData()
         }
     }
 
-    func configure(book: Book) -> BookHeaderCollectionReusableView {
+    func configure(book: Book, collectionView: UICollectionView) -> BookHeaderCollectionReusableView {
         self.book = book
+        self.parentCollectionView = collectionView
 
         BookTitleLabel.text = book.title
         if book.readChapters.count == book.numberOfChapters {
