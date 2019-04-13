@@ -11,15 +11,22 @@ import UIKit
 class ChapterButton: UIButton {
     var chapter: Int = 0 {
         didSet {
-            setTitle("\(chapter)", for: .normal)
+            replaceAttributeTitle(read: false)
         }
     }
     
     func setRead(_ read: Bool) {
+        replaceAttributeTitle(read: read)
+    }
+
+    private func replaceAttributeTitle(read: Bool) {
+        var attributes = [NSAttributedString.Key : Any]()
         if read {
-            setTitleColor(UIColor.green, for: .normal)
-        } else {
-            setTitleColor(nil, for: .normal)
+            attributes[NSAttributedString.Key.strikethroughStyle] = NSUnderlineStyle.thick.rawValue
+            attributes[NSAttributedString.Key.strikethroughColor] = UIColor.lightGray
+            attributes[NSAttributedString.Key.foregroundColor] = UIColor.lightGray
         }
+        let extractedExpr = NSAttributedString(string: "\(chapter)", attributes: attributes)
+        setAttributedTitle(extractedExpr, for: .normal)
     }
 }
