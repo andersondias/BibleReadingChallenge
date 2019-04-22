@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A179435226D422D0088FEA9 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A179434226D422D0088FEA9 /* ProgressCell.swift */; };
 		7A19926C2262547600EFD79E /* BooksManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19926B2262547600EFD79E /* BooksManagerTests.swift */; };
 		7A72713D225C2DB200E767CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72713C225C2DB200E767CC /* Book.swift */; };
 		7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934E4A225BA248000B622E /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A179434226D422D0088FEA9 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
 		7A19926B2262547600EFD79E /* BooksManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManagerTests.swift; sourceTree = "<group>"; };
 		7A72713C225C2DB200E767CC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		7A934E47225BA248000B622E /* BibleReadingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReadingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A179433226D42010088FEA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A179434226D422D0088FEA9 /* ProgressCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7A72CE29225D1EC400E31EAF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		7AB3A2C3225D1875001DAC17 /* DashboardController */ = {
 			isa = PBXGroup;
 			children = (
+				7A179433226D42010088FEA9 /* Components */,
 				7A934E4C225BA248000B622E /* DashboardViewController.swift */,
 			);
 			path = DashboardController;
@@ -401,6 +412,7 @@
 				7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */,
 				7AA4E8EB225C586200889F36 /* BooksCollectionViewController.swift in Sources */,
 				7AB3A2BC225D09A5001DAC17 /* BooksManager.swift in Sources */,
+				7A179435226D422D0088FEA9 /* ProgressCell.swift in Sources */,
 				7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
