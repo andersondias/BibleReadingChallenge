@@ -87,6 +87,7 @@
                     <tabBarItem key="tabBarItem" title="Progresso" image="Dashboard" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="dashTitle" destination="KQZ-1w-vlD" id="dPV-v4-DoE"/>
+                        <outlet property="progressCell" destination="cvX-Mt-rlI" id="4Pf-SA-U5u"/>
                         <outlet property="progressLabel" destination="NNp-Ic-Bwc" id="9gN-JP-fN7"/>
                         <outlet property="todayDateLabel" destination="NNp-Ic-Bwc" id="C93-oL-Vih"/>
                     </connections>

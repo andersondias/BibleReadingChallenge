@@ -36,7 +36,7 @@ class BooksManager {
         return Int(numberOfDays)
     }
     
-    private var numberOfDaysInFloat: Float {
+    var numberOfDaysInFloat: Float {
         return Float(numberOfUnreadChapters) / Float(daysTilTheEndOfYear)
     }
     
