@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0700B8228F1431006221BE /* ReadingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700B7228F1431006221BE /* ReadingProgress.swift */; };
+		7A0700BA228F14E9006221BE /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700B9228F14E9006221BE /* Bible.swift */; };
+		7A0700BC228F1796006221BE /* ReadingProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700BB228F1796006221BE /* ReadingProgressManager.swift */; };
+		7A0700BE228F17B3006221BE /* ReadingProgressManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700BD228F17B3006221BE /* ReadingProgressManagerTests.swift */; };
+		7A0700C0228F198B006221BE /* BibleBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700BF228F198B006221BE /* BibleBook.swift */; };
+		7A0700C2228F1CAF006221BE /* BibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0700C1228F1CAF006221BE /* BibleTests.swift */; };
 		7A179435226D422D0088FEA9 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A179434226D422D0088FEA9 /* ProgressCell.swift */; };
 		7A19926C2262547600EFD79E /* BooksManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19926B2262547600EFD79E /* BooksManagerTests.swift */; };
 		7A72713D225C2DB200E767CC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72713C225C2DB200E767CC /* Book.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0700B7228F1431006221BE /* ReadingProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingProgress.swift; sourceTree = "<group>"; };
+		7A0700B9228F14E9006221BE /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		7A0700BB228F1796006221BE /* ReadingProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingProgressManager.swift; sourceTree = "<group>"; };
+		7A0700BD228F17B3006221BE /* ReadingProgressManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingProgressManagerTests.swift; sourceTree = "<group>"; };
+		7A0700BF228F198B006221BE /* BibleBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBook.swift; sourceTree = "<group>"; };
+		7A0700C1228F1CAF006221BE /* BibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleTests.swift; sourceTree = "<group>"; };
 		7A179434226D422D0088FEA9 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
 		7A19926B2262547600EFD79E /* BooksManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManagerTests.swift; sourceTree = "<group>"; };
 		7A72713C225C2DB200E767CC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -158,6 +170,8 @@
 				7AA4E8DE225C427D00889F36 /* BookTests.swift */,
 				7A934E63225BA24A000B622E /* Info.plist */,
 				7A19926B2262547600EFD79E /* BooksManagerTests.swift */,
+				7A0700BD228F17B3006221BE /* ReadingProgressManagerTests.swift */,
+				7A0700C1228F1CAF006221BE /* BibleTests.swift */,
 			);
 			path = BibleReadingChallengeTests;
 			sourceTree = "<group>";
@@ -175,6 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				7A72713C225C2DB200E767CC /* Book.swift */,
+				7A0700B7228F1431006221BE /* ReadingProgress.swift */,
+				7A0700B9228F14E9006221BE /* Bible.swift */,
+				7A0700BF228F198B006221BE /* BibleBook.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */,
+				7A0700BB228F1796006221BE /* ReadingProgressManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -406,13 +424,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA4E8E9225C528100889F36 /* ChapterCollectionViewCell.swift in Sources */,
+				7A0700BC228F1796006221BE /* ReadingProgressManager.swift in Sources */,
 				7A72713D225C2DB200E767CC /* Book.swift in Sources */,
 				7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */,
 				7A934E4D225BA248000B622E /* DashboardViewController.swift in Sources */,
 				7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */,
+				7A0700C0228F198B006221BE /* BibleBook.swift in Sources */,
+				7A0700B8228F1431006221BE /* ReadingProgress.swift in Sources */,
 				7AA4E8EB225C586200889F36 /* BooksCollectionViewController.swift in Sources */,
 				7AB3A2BC225D09A5001DAC17 /* BooksManager.swift in Sources */,
 				7A179435226D422D0088FEA9 /* ProgressCell.swift in Sources */,
+				7A0700BA228F14E9006221BE /* Bible.swift in Sources */,
 				7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,9 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0700C2228F1CAF006221BE /* BibleTests.swift in Sources */,
 				7AA4E8DF225C427D00889F36 /* BookTests.swift in Sources */,
 				7A934E62225BA24A000B622E /* BibleReadingChallengeTests.swift in Sources */,
 				7A19926C2262547600EFD79E /* BooksManagerTests.swift in Sources */,
+				7A0700BE228F17B3006221BE /* ReadingProgressManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
