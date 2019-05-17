@@ -9,12 +9,24 @@
 class ReadingProgressManager {
 
     var numberOfReadChapters: Int {
-        return readingProgress.readChapters.compactMap({ $0 }).count
+        return readingProgress.numberOfReadChapters
     }
+
     let readingProgress = ReadingProgress(bible: Bible.shared)
 
     func readChapter(book: BibleBook, chapter: Int, when: String) {
-        let position = Bible.shared.chapterToPosition(book: book, chapter: chapter)
-        readingProgress.readChapters[position] = when
+        let p = position(book: book, chapter: chapter)
+        readingProgress.readChapters[p] = when
+    }
+    
+    func unreadChapter(book: BibleBook, chapter: Int) {
+        let p = position(book: book, chapter: chapter)
+        readingProgress.readChapters[p] = nil
+    }
+    
+    private
+    
+    func position(book: BibleBook, chapter: Int) -> Int {
+        return Bible.shared.chapterToPosition(book: book, chapter: chapter)
     }
 }

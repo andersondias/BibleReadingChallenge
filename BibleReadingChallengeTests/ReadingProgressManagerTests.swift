@@ -27,4 +27,13 @@ class ReadingProgressManagerTests: XCTestCase {
         manager.readChapter(book: exodus, chapter: 4, when: "20190517")
         XCTAssertEqual(manager.numberOfReadChapters, 4)
     }
+
+    func testUnreadChapters() {
+        let manager = ReadingProgressManager()
+        
+        manager.readChapter(book: genesis, chapter: 1, when: "20190516")
+        XCTAssertEqual(manager.numberOfReadChapters, 1)
+        manager.unreadChapter(book: genesis, chapter: 1)
+        XCTAssertEqual(manager.numberOfReadChapters, 0)
+    }
 }

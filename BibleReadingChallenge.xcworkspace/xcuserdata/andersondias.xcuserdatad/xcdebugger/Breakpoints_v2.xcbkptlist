@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BibleReadingChallengeTests/ReadingProgressManagerTests.swift"
-            timestampString = "579810247.336157"
+            timestampString = "579821523.281909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BibleReadingChallenge/Shared/ReadingProgressManager.swift"
-            timestampString = "579810247.337834"
+            timestampString = "579821523.28301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "readChapter(book:chapter:when:)"
             landmarkType = "7">
          </BreakpointContent>
