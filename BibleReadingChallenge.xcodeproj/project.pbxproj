@@ -29,6 +29,7 @@
 		7AA4E8ED225C610400889F36 /* BookHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */; };
 		7AB3A2B6225CE272001DAC17 /* ChapterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */; };
 		7AB3A2BC225D09A5001DAC17 /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */; };
+		7AB95764228F602C006207AB /* ReadingStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB95763228F602C006207AB /* ReadingStatistics.swift */; };
 		81F2E82C2A910CF3260FB566 /* Pods_BibleReadingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		7AA4E8EC225C610400889F36 /* BookHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		7AB3A2B5225CE272001DAC17 /* ChapterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterButton.swift; sourceTree = "<group>"; };
 		7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
+		7AB95763228F602C006207AB /* ReadingStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingStatistics.swift; sourceTree = "<group>"; };
 		95B2F8DFC64E680426E9792E /* Pods-BibleReadingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		B00B31E74E4E43F8380A8969 /* Pods-BibleReadingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleReadingChallenge.release.xcconfig"; path = "Target Support Files/Pods-BibleReadingChallenge/Pods-BibleReadingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C1BFCA5B367A48FADEC8035D /* Pods_BibleReadingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleReadingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 			children = (
 				7AB3A2BB225D09A5001DAC17 /* BooksManager.swift */,
 				7A0700BB228F1796006221BE /* ReadingProgressManager.swift */,
+				7AB95763228F602C006207AB /* ReadingStatistics.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA4E8E9225C528100889F36 /* ChapterCollectionViewCell.swift in Sources */,
+				7AB95764228F602C006207AB /* ReadingStatistics.swift in Sources */,
 				7A0700BC228F1796006221BE /* ReadingProgressManager.swift in Sources */,
 				7A72713D225C2DB200E767CC /* Book.swift in Sources */,
 				7A934E4B225BA248000B622E /* AppDelegate.swift in Sources */,
